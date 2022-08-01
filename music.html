@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-image: url("https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVlbCUyMHRoZSUyMG11c2ljfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position:;
+            position: relative;
+        }
+        .nav li a:hover{
+            color: azure;
+        }
+        .nav li {
+            float: right;
+            list-style: none;
+        }
+        .nav a {
+            list-style: none;
+            height: 50px;
+            line-height: 50px;
+            font-size: 1rem;
+            font-weight: 550;
+            display: block;
+            padding: 5px 35px;
+            color: rgb(25, 199, 19);
+            text-decoration: none;
+        }
+        
+        .content {
+            width: 100%;
+            position: absolute;
+            top: 45%;
+        }
+
+        .left-col {
+            margin-left: 11%;
+        }
+        .left-col h1 {
+            margin-top: 20%;
+            font-size: 50px;
+            color: rgb(50, 20, 220);
+        }
+        .right-col {
+            float: right;
+            margin-right: 10%;
+            margin-top: -5%;
+            display: flex;
+            align-items: center;
+        }
+        .right-col p {
+            font-size: 21px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            margin-right: 0px;
+        }
+        
+       
+</style>
+</head>
+<body>
+    <div class="container">
+         <ul class="nav">
+              <li><a href="#">CONTACT</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">ARTISTS</a></li>
+              <li><a href="#">MUSIC</a></li>
+              <li><a href="#">HOME</a></li>
+</ul>
+         
+    </div>
+
+    <div class="=content">
+       <div class="left-col">
+        <h1>MY <br>MUSICS</h1>
+    </div>
+    <div class="right-col">
+        <p>click here to Listen</p>
+        <img src="C:\Users\hp\Downloads\mus.jpg" id="icon">
+    </div>
+</div>
+<audio id="mysound">
+    <source src="C:\Users\hp\Downloads\Panchara Kunju _ Panjara Kunju  _ Malayalam cartoon song from manchadi (manjadi) _ Manjadi rhyme.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var mysound = document.getElementById("mysound");
+        var icon = document.getElementById("icon");
+
+    
+      icon.onclick = function() {
+        if (mysound.paused) {
+
+
+            mysound.play();
+            icon.src ="C:\Users\hp\Downloads\mus.jpg";
+        }
+        else {
+
+        
+            mysound.pause();
+            icon.src ="C:\Users\hp\Downloads\mus.jpg";
+        }
+     }
+        
+</script>
+</body>
+</html>
